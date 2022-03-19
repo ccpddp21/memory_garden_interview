@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# Memory Gardens Interview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Objective
+1. Your first task is to take the GLB and create a react app with three.js and aframe.
+The room/scene should be available in 3D module for exploration and view.
+2. The second task is to create and imbed lights and accents via three.js and aframe on top of the design.
+You are free to add any components to the room to improve immersibility and overall experience
 
-## Available Scripts
+## Work Done
+- Created a React project
+- Installed A-Frame
+- Found a three.js godray lighting effect example. A derived version of this example has been directly added
+to the project under "aframe-test > src > js". However, it is not fully integrated into the A-Frame container.
+- Added building model to the three.js file "godray_effect.js"; the generated godrays interact with the model.
 
-In the project directory, you can run:
+## Findings
+- Found example code within the three.js GitHub repo that provided an example of how to leverage three.js
+to produce godray lighting effects; advanced lighting effects possible with three.js.
+- Three.js GTLF loader could not render the texture material of the building.
+- Keyboard controls do not work when an A-Frame scene is rendered with three.js controls enabled.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Future Work / Work Needed
+- Proper integration of the three.js godray effect example into the A-Frame container would take more time
+than the 4 hours, but possible.
+- A-Frame controls omitted temporarily; three.js-provided controls enabled, however. Completing a full integration would re-enable
+A-Frame controls.

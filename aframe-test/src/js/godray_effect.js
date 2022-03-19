@@ -64,10 +64,10 @@ function init() {
 
     // sphere
 
-    const geo = new THREE.SphereGeometry(1, 20, 10);
-    sphereMesh = new THREE.Mesh(geo, materialScene);
-    sphereMesh.scale.multiplyScalar(20);
-    scene.add(sphereMesh);
+    // const geo = new THREE.SphereGeometry(1, 20, 10);
+    // sphereMesh = new THREE.Mesh(geo, materialScene);
+    // sphereMesh.scale.multiplyScalar(20);
+    // scene.add(sphereMesh);
 
     //
 
@@ -237,8 +237,8 @@ function render() {
 
     const time = Date.now() / 4000;
 
-    sphereMesh.position.x = orbitRadius * Math.cos(time);
-    sphereMesh.position.z = orbitRadius * Math.sin(time) - 100;
+    //sphereMesh.position.x = orbitRadius * Math.cos(time);
+    //sphereMesh.position.z = orbitRadius * Math.sin(time) - 100;
 
     if (postprocessing.enabled) {
 

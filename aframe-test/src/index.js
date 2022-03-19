@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'aframe';
 import 'aframe-extras';
-import 'three';
+//import 'three';
 
 ReactDOM.render(
   <React.StrictMode>
